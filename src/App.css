@@ -36,7 +36,7 @@
 }
 
 .App-header__buttons {
-  display: inline;
+  display: flex;
 }
 
 .buttons__button {
@@ -75,6 +75,25 @@
 }
 
 .button--one--two {
+  border-top: 2px solid #61dafb;
+  border-left: 2px solid #61dafb;
+  border-bottom: 2px solid #61dafb;
+}
+
+.button--two--zero {
+  border-top: 2px solid #61dafb;
+  border-right: 2px solid #61dafb;
+  border-bottom: 2px solid #61dafb;
+}
+
+.button--two--one {
+  border-top: 2px solid #61dafb;
+  border-left: 2px solid #61dafb;
+  border-right: 2px solid #61dafb;
+  border-bottom: 2px solid #61dafb;
+}
+
+.button--two--two {
   border-top: 2px solid #61dafb;
   border-left: 2px solid #61dafb;
   border-bottom: 2px solid #61dafb;
