@@ -106,6 +106,25 @@ function App() {
       }
     }
 
+    // verify draw
+    const initialValue = 0;
+    var sumWithInitial = 0;
+    sumWithInitial = newDataBase[0].reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      initialValue
+    );
+    sumWithInitial =
+      newDataBase[1].reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        initialValue
+      ) + sumWithInitial;
+    sumWithInitial =
+      newDataBase[2].reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        initialValue
+      ) + sumWithInitial;
+    if (sumWithInitial === 13) setEndGame("Draw!");
+
     setGameState(!gameState);
   }
 
@@ -218,7 +237,7 @@ function App() {
                 restart();
               }}
             >
-              Recomeçar
+              Restart
             </button>
           </>
         )}
